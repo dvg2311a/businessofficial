@@ -96,8 +96,8 @@
                     <ul class="menu-list">
                      {{--}} <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>--}}
                       <li><a href="index.html" class="item-anchor" data-effect="About">Dashboard</a></li>
-                      <li><a href="{{route('payments.index')}}" class="item-anchor" data-effect="About">Pago</a></li>
-                       <li><a href="{{route('memberships.index')}}" class="item-anchor" data-effect="About">Membresía</a></li> 
+                      <li><a href="" class="item-anchor" data-effect="About">Pago</a></li>
+                       <li><a href="" class="item-anchor" data-effect="About">Membresía</a></li>
 
                       <a class="btn btn-ptimary" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('formLogout').submit();">Cerrar Sesión</a>
                       <form action="{{route('logout')}}" method="POST" style="=display:center;" id="formLogout">
@@ -182,7 +182,7 @@
         </div>
       </div>
     </section>
-    
+
     <section id="selling-products" class="product-store bg-light-grey padding-large">
       <div class="container">
         <div class="section-header">
@@ -216,7 +216,7 @@
                     </button>
                     <button type="button" class="view-btn tooltip d-flex">
                       <i class="icon icon-heart"></i>
-                      <span class= "tooltip-text">Favoritos</span> 
+                      <span class= "tooltip-text">Favoritos</span>
                     </button>
                   </div>
                 </div>
@@ -273,7 +273,7 @@
                         d-flex">
                       <i class="icon icon-heart"></i>
                       <span class="tooltip-text">Favoritos</span>
-          
+
                     </button>
                   </div>
                 </div>
@@ -368,7 +368,7 @@
                   </h3>
                   <div class="item-price text-primary">$30.00</div>
                   <h6 class="subtitle"><a href=""> Tienda ortiz / Juana Zeledón</a></h6>
-                
+
                 </div>
               </div>
               <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -425,7 +425,7 @@
                     <a href="single-product.html">Serúm de niacinamida</a>
                   </h3>
                   <div class="item-price text-primary">$35.00</div>
-                  <h6 class="subtitle"><a href=""> Boutique Rosé / Solieth Zamora</a></h6 >                
+                  <h6 class="subtitle"><a href=""> Boutique Rosé / Solieth Zamora</a></h6 >
                 </div>
               </div>
               <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -1178,8 +1178,8 @@
       </div>
     </section>
 
-    
-    
+
+
     <section id="latest-blog" class="padding-large">
       <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
