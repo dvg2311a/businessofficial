@@ -13,9 +13,60 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Menu Principal') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Pago') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Membresia') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <a class="btn btn-ptimary" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('formLogout').submit();">Cerrar Sesión</a>
+                    <form action="{{route('logout')}}" method="POST" style="=display:center;" id="formLogout">
+                      @csrf
+                    </form>
+                </div>
+
+                <div id="main-nav" class="stellarnav d-flex justify-content-end right">
+                    <ul class="menu-list">
+                     {{--}} <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>--}}
+
+
+
+                      <li class="user-items search-item pe-3">
+                        <a href="#" class="search-button">
+                          <i class="icon icon-search"></i>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="cart.html">
+                          <i class="icon icon-shopping-cart"></i>
+                        </a>
+                      </li>
+
+                      </li>
+                      <a href="wishlist.html">
+                        <i class="icon icon-heart"></i>
+                      </a>
+                      <li>
+                        <a href="login">
+                          <i class="icon icon-user"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                
             </div>
 
             <!-- Settings Dropdown -->
@@ -64,11 +115,13 @@
         </div>
     </div>
 
+    
+
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+                {{ __('Inicio') }}
             </x-responsive-nav-link>
         </div>
 
@@ -81,7 +134,7 @@
 
             <div class="mt-3 space-y-1">
                 <x-responsive-nav-link :href="route('profile.edit')">
-                    {{ __('Profile') }}
+                    {{ __('Perfil') }}
                 </x-responsive-nav-link>
 
                 <!-- Authentication -->
@@ -91,7 +144,7 @@
                     <x-responsive-nav-link :href="route('logout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                        {{ __('Log Out') }}
+                        {{ __('Cerrar sesión') }}
                     </x-responsive-nav-link>
                 </form>
             </div>
