@@ -2,105 +2,108 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Sector;
 use Illuminate\Http\Request;
-use App\Models\Sector_model;
 
-
-
-
+/**
+ * Class SectorController
+ * @package App\Http\Controllers
+ */
 class SectorController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
-     * @return \iluminate\Http\Response
+     *
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
+        $sectors = Sector::paginate();
 
-
-        $sectorregister = Sector_model::paginate();
-        /*SE ESPERA LA VISTA QUE CORRESPONDE A "SECTOR" PARA LA CONEXIÓN CON LA MISMA. MIENTRAS SE ESPERA 
-        LA CREACIÓN DE LA VISTA, SE USA 'REGISTER.BLADE' SOLO COMO EJEMPLO, DADA LA NECESIDAD DE LA ESTRUCTURA.*/
-        return  view('..blade', compact('sector'))
-        ->with('i' (request()->input('page', 1) -1) * 
-        $sectorregister->perPage());
+        return view('sector/index', compact('sectors'))
+            ->with('i', (request()->input('page', 1) - 1) * $sectors->perPage());
     }
 
     /**
      * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        $sector= new Sector_model ();
-         /*SE ESPERA LA VISTA QUE CORRESPONDE A "SECTOR" PARA LA CONEXIÓN CON LA MISMA. MIENTRAS SE ESPERA 
-        LA CREACIÓN DE LA VISTA, SE USA 'REGISTER.BLADE' SOLO COMO EJEMPLO, DADA LA NECESIDAD DE LA ESTRUCTURA.*/
-        return view('register.blade', compact('sector'));
+        $sector = new Sector();
+        return view('sector/create', compact('sector'));
     }
 
     /**
      * Store a newly created resource in storage.
-     *@param \Iluminate\Http\Request $request
-    *@return \Iluminate\Http\Response
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        request()->validate(Sector_model::$rules);
-        $sectorregister=Sector_model::create($request->all());
- /*SE ESPERA LA VISTA QUE CORRESPONDE A "SECTOR" PARA LA CONEXIÓN CON LA MISMA. MIENTRAS SE ESPERA 
-        LA CREACIÓN DE LA VISTA, SE USA 'REGISTER.BLADE' SOLO COMO EJEMPLO, DADA LA NECESIDAD DE LA ESTRUCTURA.*/
-        return redirect()->route('register.blade')
-        ->with('Éxito', 'El sector se ha añadido.');
+        request()->validate(Sector::$rules);
+
+        $sector = Sector::create($request->all());
+
+        return redirect()->route('sector/index')
+            ->with('success', 'Sector created successfully.');
     }
 
     /**
      * Display the specified resource.
-     * @param int $id
-     * @return \Iluminate\Http\Response
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response
      */
-    public function show(string $id)
+    public function show($id)
     {
-        $sectorregister = Sector_model::find($id);
-        return view('register.blade', compact('sector'));
+        $sector = Sector::find($id);
+
+        return view('sector.show', compact('sector'));
     }
 
     /**
      * Show the form for editing the specified resource.
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        $sectorregister = Sector_model::find($id);
-        return view('register.blade', compact ('sector'));
+        $sector = Sector::find($id);
+
+        return view('sector/edit', compact('sector'));
     }
 
     /**
      * Update the specified resource in storage.
-     * @param  \Iluminate\Http\Request $request
-     * @param Sector_model $sectorregister
-     * @return \Iluminate\Http\Response
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  Sector $sector
+     * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Sector_model $sectorregister ,string $id)
+    public function update(Request $request, Sector $sector)
     {
-        request()->validate(Sector_model::$rules);
+        request()->validate(Sector::$rules);
 
-        $sectorregister->update ($request->all());
+        $sector->update($request->all());
 
-        return redirect()->route('register.blade')
-        ->with('Éxito', 'Sector actualizado');
+        return redirect()->route('sectors.index')
+            ->with('success', 'Sector updated successfully');
     }
 
     /**
-     * Remove the specified resource from storage.
      * @param int $id
-     * @return \Iluminate\Http\RedirectResponse
-     * 
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
-    public function destroy(string $id, Request $request, Sector_model $sectorregister)
+    public function destroy($id)
     {
-        $sectorregister = Sector_model::find($id)->delete();
+        $sector = Sector::find($id)->delete();
 
-        return redirect()->route('register.blade')
-        ->with('Éxito', 'El sector sido borrado');
+        return redirect()->route('sectors.index')
+            ->with('success', 'Sector deleted successfully');
     }
 }
