@@ -19,6 +19,6 @@
 
     </div>
     <div class="box-footer mt20 mt-3 col-3">
-        <button type="submit" class="btn btn-danger">{{ __('Guardar') }}</button>
+        <button type="submit" class="btn btn-warning bg-teal-300">{{ __('Guardar') }}</button>
     </div>
 </div>

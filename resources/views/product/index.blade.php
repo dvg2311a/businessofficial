@@ -78,7 +78,7 @@ $i=0;
                                                     @csrf
 
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar producto') }}</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm bg-pink-700"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar producto') }}</button>
                                                 </form>
                                             </td>
                                         </tr>
