@@ -24,6 +24,7 @@ class Sector extends Model
     static $rules = [
 
 		'name' => 'required',
+        'description'=> 'required',
 		'category' => 'required',
     ];
 
@@ -34,6 +35,7 @@ class Sector extends Model
      *
      * @var array
      */
+   
     protected $fillable = ['name','description','category'];
 
 

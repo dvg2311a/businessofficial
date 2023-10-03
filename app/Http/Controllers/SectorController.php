@@ -48,7 +48,7 @@ class SectorController extends Controller
         $sector = Sector::create($request->all());
 
         return redirect()->route('sector/index')
-            ->with('success', 'Sector created successfully.');
+            ->with('Éxito', 'Sector creado exitosamente');
     }
 
     /**
@@ -90,8 +90,8 @@ class SectorController extends Controller
 
         $sector->update($request->all());
 
-        return redirect()->route('sectors.index')
-            ->with('success', 'Sector updated successfully');
+        return redirect()->route('sector/index')
+            ->with('success', 'Sector actualizado exitosamente');
     }
 
     /**
@@ -104,6 +104,6 @@ class SectorController extends Controller
         $sector = Sector::find($id)->delete();
 
         return redirect()->route('sectors.index')
-            ->with('success', 'Sector deleted successfully');
+            ->with('Éxito', 'Sector eliminado');
     }
 }

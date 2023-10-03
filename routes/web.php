@@ -44,8 +44,11 @@ Route::get('/product/store',  [ProductController::class, 'store'])->name('produc
 Route::middleware('auth')->group(function()
 {
     Route::get('/sector', [SectorController::class, 'index'])->name('sector/index');
-    Route::get('/sector/create', [SectorController::class, 'create'])->name('sector/create');
+    Route::any('/sector/create', [SectorController::class, 'create'])->name('sector/create');
     Route::get('/sector/store', [SectorController::class, 'store'])->name('sector/store');
+    Route::delete('/sector/destroy', [SectorController::class, 'destroy'])->name('sector/destroy');
+    Route::get('/sector/show', [SectorController::class, 'show'])->name('sector/show');
+    Route::post('/sector/edit', [SectorController::class, 'edit'])->name('sector/edit');
 
 });
 

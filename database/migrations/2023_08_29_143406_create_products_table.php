@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments("id");
-            $table->string("name");            
+            $table->string("name");
             $table->string("description");
             $table->string("price");
             $table->char("size", 5)->nullable();
-            $table->string("color")->nullable();  
+            $table->string("color")->nullable();
             $table->string("avilable");
             $table->integer("ammount")->nullable();
             $table->binary("photo")->nullable();
@@ -29,7 +29,7 @@ return new class extends Migration
 
             $table->integer("id_sector")->unsigned();
             $table->foreign("id_sector")->references("id")->
-            on("sector")->OnDelete("cascade")->OnUpdate("cascade");
+            on("sectors")->OnDelete("cascade")->OnUpdate("cascade");
 
             $table->timestamps();
         });

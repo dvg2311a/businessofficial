@@ -45,7 +45,7 @@ class ProductController extends Controller
 
         $product = Product::create($request->all());
 
-        return redirect()->route('products.index')
+        return redirect()->route('products/index')
             ->with('Éxito', 'Producto agregado');
     }
 

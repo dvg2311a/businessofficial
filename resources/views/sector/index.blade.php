@@ -71,10 +71,11 @@
 											<td>{{ $sector->category }}</td>
 
                                             <td>
-                                                <form action="{{ route('sectors.destroy',$sector->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('sectors.show',$sector->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Mostrar') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('sectors.edit',$sector->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
+                                                <form action="{{ route('sector/destroy',$sector->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('sector/show', $sector->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Mostrar') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('sector/edit', $sector->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
                                                     @csrf
+
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar') }}</button>
                                                 </form>
@@ -89,5 +90,8 @@
                 {!! $sectors->links() !!}
             </div>
         </div>
+
     </div>
 @endsection
+
+
