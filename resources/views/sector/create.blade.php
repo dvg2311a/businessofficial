@@ -16,7 +16,7 @@
                         <span class="card-title">{{ __('Añadir ') }} Sector</span>
                     </div>
                     <div class="card-body">
-                        <form method="GET" action="{{ route('sector/index') }}"  role="form" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('sector/store') }}"  role="form" enctype="multipart/form-data">
                             @csrf
 
                             @include('sector.form')

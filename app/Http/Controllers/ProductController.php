@@ -19,7 +19,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('product/index', compact('products'));
+        return view('product/index', compact ('products'));
     }
 
     /**
@@ -45,7 +45,7 @@ class ProductController extends Controller
 
         $product = Product::create($request->all());
 
-        return redirect()->route('products/index')
+        return redirect()->route('product/index')
             ->with('Éxito', 'Producto agregado');
     }
 

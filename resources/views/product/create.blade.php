@@ -16,7 +16,7 @@
                         <span class="card-title">{{ __('Agregar') }} Producto</span>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('product/store') }}" role="form"
+                        <form method="GET" action="{{ route('product/store') }}" role="form"
                             enctype="multipart/form-data">
                             @csrf
 
