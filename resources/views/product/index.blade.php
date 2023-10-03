@@ -73,9 +73,10 @@ $i=0;
 
                                             <td>
                                                 <form action="{{ route('product/destroy',$product->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('product/show',$product->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Detalles de producto') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('product/edit',$product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar información del producto') }}</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route ('product/show', $product->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Detalles') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('product/edit', $product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Modificar') }}</a>
                                                     @csrf
+
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar producto') }}</button>
                                                 </form>

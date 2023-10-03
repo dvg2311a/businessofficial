@@ -43,6 +43,7 @@ Route::middleware('auth')->group(function(){
     Route::delete('/product/destroy', [ProductController::class, 'destroy'])->name('product/destroy');
     Route::get('/producto/show', [ProductController::class, 'destroy'])->name('product/show');
     Route::post('/product/edit', [ProductController::class, 'edit'])->name('product/edit');
+    Route::put('/product/update', [ProductController::class, 'update'])->name('product/update');
 
 });
 
