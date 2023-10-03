@@ -77,7 +77,7 @@ $i=0;
                                                     <a class="btn btn-sm btn-success" href="{{ route('product/edit',$product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar información del producto') }}</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar producto') }}</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm bg-pink-700"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar producto') }}</button>
                                                 </form>
                                             </td>
                                         </tr>
