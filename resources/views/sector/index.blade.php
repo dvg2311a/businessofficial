@@ -35,26 +35,9 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>Id</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
 										<th>Nombre</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
+
 										<th>Descripción</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
 
 										<th>Categoría</th>
 
@@ -71,9 +54,10 @@
 											<td>{{ $sector->category }}</td>
 
                                             <td>
+                                                <a class="btn btn-sm btn-primary " href="{{ route('sector/show', $sector->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Mostrar') }}</a>
+                                                <a class="btn btn-sm btn-success" href="{{ route('sector/edit', $sector->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
                                                 <form action="{{ route('sector/destroy',$sector->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('sector/show', $sector->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Mostrar') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('sector/edit', $sector->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
+
                                                     @csrf
 
                                                     @method('DELETE')

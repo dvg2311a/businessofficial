@@ -10,10 +10,10 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex¿; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Product') }}
+                                {{ __('') }}
                             </span>
 
                              <div class="float-right">
@@ -70,8 +70,8 @@
 
                                             <td>
                                                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('products.show',$product->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Detalles de producto') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('products.edit',$product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar información del producto') }}</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('products/show',$product->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Detalles de producto') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('products/edit',$product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar información del producto') }}</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar producto') }}</button>

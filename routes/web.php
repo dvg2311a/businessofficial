@@ -36,19 +36,25 @@ Route::get('/dashboard', function () {
 
 
 Route::middleware('auth')->group(function(){
-Route::get('/product', [ProductController::class, 'index'])->name('product/index');
-Route::get('/product/create', [ProductController::class, 'create'])->name('product/create');
-Route::get('/product/store',  [ProductController::class, 'store'])->name('product/store');
+
+    Route::get('/product', [ProductController::class, 'index'])->name('product/index');
+    Route::get('/product/create', [ProductController::class, 'create'])->name('product/create');
+    Route::get('/product/store',  [ProductController::class, 'store'])->name('product/store');
+    Route::delete('/product/destroy', [ProductController::class, 'destroy'])->name('product/destroy');
+    Route::get('/producto/show', [ProductController::class, 'destroy'])->name('product/show');
+    Route::post('/product/edit', [ProductController::class, 'edit'])->name('product/edit');
+
 });
 
 Route::middleware('auth')->group(function()
 {
     Route::get('/sector', [SectorController::class, 'index'])->name('sector/index');
-    Route::any('/sector/create', [SectorController::class, 'create'])->name('sector/create');
-    Route::get('/sector/store', [SectorController::class, 'store'])->name('sector/store');
+    Route::get('/sector/create', [SectorController::class, 'create'])->name('sector/create');
+    Route::post('/sector/store', [SectorController::class, 'store'])->name('sector/store');
     Route::delete('/sector/destroy', [SectorController::class, 'destroy'])->name('sector/destroy');
     Route::get('/sector/show', [SectorController::class, 'show'])->name('sector/show');
-    Route::post('/sector/edit', [SectorController::class, 'edit'])->name('sector/edit');
+    Route::get('/sector/edit', [SectorController::class, 'edit'])->name('sector/edit');
+    Route::put('/sector/update', [SectorController::class, 'update'])->name('sector/update');
 
 });
 
