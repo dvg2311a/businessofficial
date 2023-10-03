@@ -1,5 +1,5 @@
 <div class="box box-info padding-1 container">
-    <div class="box-body row">
+    <div class="box-body">
 
         <div class="form-group mt-3 col-3">
             {{ Form::label('Nombre') }}
