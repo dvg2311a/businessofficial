@@ -26,22 +26,22 @@
       <script src="../assets/js/modernizr.js"></script>
     </head>
     <body>
-  
+
       <div class="preloader-wrapper">
         <div class="preloader">
         </div>
       </div>
-  
+
       <div class="search-popup">
         <div class="search-popup-container">
-  
+
           <form role="search" method="get" class="search-form" action="">
             <input type="search" id="search-form" class="search-field" placeholder="Empieza a buscar" value="" name="s" />
             <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
           </form>
-  
+
           <h5 class="cat-list-title">Categorias</h5>
-  
+
           <ul class="cat-list">
             <li class="cat-list-item">
               <a href="shop.html" title="Men Jackets">Ropa</a>
@@ -94,25 +94,25 @@
                 </div>
                 <div class="col-lg-10 col-md-10">
                   <div class="navbar">
-  
+
                     <div id="main-nav" class="stellarnav d-flex justify-content-end right">
                       <ul class="menu-list">
                        {{--}} <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>--}}
 
-  
-  
+
+
                         <li class="user-items search-item pe-3">
                           <a href="#" class="search-button">
                             <i class="icon icon-search"></i>
                           </a>
                         </li>
-  
+
                         <li>
                           <a href="cart.html">
                             <i class="icon icon-shopping-cart"></i>
                           </a>
                         </li>
-  
+
                         </li>
                         <a href="wishlist.html">
                           <i class="icon icon-heart"></i>
@@ -124,7 +124,7 @@
                         </li>
                       </ul>
                     </div>
-  
+
                   </div>
                 </div>
               </div>
@@ -132,9 +132,9 @@
           </nav>
         </div>
       </header>
-  
+
       <section id="billboard" class="overflow-hidden" >
-  
+
         <button class="button-prev">
           <i class="icon icon-chevron-left"></i>
         </button>
@@ -178,9 +178,13 @@
           </div>
         </div>
       </section>
-  
+
       <section id="selling-products" class="product-store bg-light-grey padding-large">
         <div class="container">
+
+            @livewire('sector-live')
+
+
           <div class="section-header">
             <h2 class="section-title">Nuestros productos</h2>
           </div>
@@ -269,7 +273,7 @@
                           d-flex">
                         <i class="icon icon-heart"></i>
                         <span class="tooltip-text">Favoritos</span>
-  
+
                       </button>
                     </div>
                   </div>
@@ -298,7 +302,7 @@
                           d-flex">
                         <i class="icon icon-heart"></i>
                         <span class="tooltip-text">Favoritos</span>
-  
+
                       </button>
                     </div>
                   </div>
@@ -364,7 +368,7 @@
                     </h3>
                     <div class="item-price text-primary">$30.00</div>
                     <h6 class="subtitle"><a href=""> Tienda ortiz / Juana Zeledón</a></h6>
-  
+
                   </div>
                 </div>
                 <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -393,7 +397,7 @@
                     </h3>
                     <div class="item-price text-primary">$22.00</div>
                   <h6 class="subtitle"><a href=""> Tienda ortiz / Juana Zeledón</a></h6 >
-  
+
                   </div>
                 </div>
                 <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -469,7 +473,7 @@
                           d-flex">
                         <i class="icon icon-heart"></i>
                         <span class="tooltip-text"> Favoritos</span>
-  
+
                       </button>
                     </div>
                   </div>
@@ -498,7 +502,7 @@
                           d-flex">
                         <i class="icon icon-heart"></i>
                         <span class="tooltip-text">Favoritos</span>
-  
+
                       </button>
                     </div>
                   </div>
@@ -527,7 +531,7 @@
                           d-flex">
                         <i class="icon icon-heart"></i>
                         <span class="tooltip-text">Favoritos</span>
-  
+
                       </button>
                     </div>
                   </div>
@@ -537,7 +541,7 @@
                     </h3>
                     <div class="item-price text-primary">$65.00</div>
                     <h6 class="subtitle"><a href=""> Variedades Zel / Samanta Cornejo</a></h6 >
-  
+
                   </div>
                 </div>
               </div>
@@ -1173,9 +1177,9 @@
           </div>
         </div>
       </section>
-  
-  
-  
+
+
+
       <section id="latest-blog" class="padding-large">
         <div class="container">
           <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
@@ -1246,9 +1250,9 @@
           </div>
         </div>
       </section>
-  
-  
-  
+
+
+
       <section id="latest-collection">
         <div class="container">
           <div class="product-collection row">
@@ -1299,10 +1303,10 @@
           </div>
         </div>
       </section>
-  
-  
-  
-  
+
+
+
+
       <hr>
       <footer id="footer">
         <div class="container">
@@ -1407,7 +1411,7 @@
           </div>
         </div>
       </div>
-  
+
       <script src="../assets/js/jquery-1.11.0.min.js"></script>
       <script src="../assets/js/plugins.js"></script>
       <script src="../assets/js/script.js"></script>
