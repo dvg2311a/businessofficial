@@ -1,5 +1,6 @@
 <div class="box box-info padding-1 container">
 
+
     <div class="box-body row">
 
         <div class="form-group mt-3 col-3">
@@ -49,11 +50,18 @@
             {{ Form::text('ammount', $product->ammount, ['class' => 'form-control' . ($errors->has('ammount') ? ' is-invalid' : ''), 'placeholder' => '']) }}
             {!! $errors->first('ammount', '<div class="invalid-feedback">:message</div>') !!}
         </div>
+
+
         <div class="form-group mt-3">
-            {{ Form::label('Muestra') }}
-            {{ Form::file('photo', $product->photo, ['class' => 'form-control' . ($errors->has('photo') ? ' is-invalid' : ''), 'placeholder' => '']) }}
+            {{ Form::label('Imágenes') }}
+            {{ Form::file('photo', $product->imgProduct, ['class' => 'form-control' . ($errors->has('photo') ? ' is-invalid' : ''), 'placeholder' => '']) }}
             {!! $errors->first('photo', '<div class="invalid-feedback">:message</div>') !!}
+
+           {{--}} <label for="imgProduct">Imágenes</label>
+            <input type="file" name="imgProduct" class="form-control" id="imgProduct">--}}
         </div>
+
+
 
 
         <div class="form-group mt-3">

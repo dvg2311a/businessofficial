@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string("color")->nullable();
             $table->string("avilable");
             $table->integer("ammount")->nullable();
-            $table->binary("photo")->nullable();
+            $table->string("photo")->nullable();
             $table->string("status");
 
             $table->integer("id_user")->unsigned();
