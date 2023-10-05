@@ -14,8 +14,8 @@
             <div class="row justify-content-right">
                 {{-- <div class="container text-center border:primary"> --}}
                 <div class="cold-md-8 text-center>
-            
-          
+
+
 
             <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -24,14 +24,14 @@
                         <h4></h4>
                         <div class="container text-center col-md-3 py-2>
                           </div>
-                        
 
-                    
 
-    
 
-                
-            
+
+
+
+
+
         {{-- }} Name --}}
         <div>
             <x-input-label for="name"
@@ -78,12 +78,7 @@
                         name="age" />
                 </div>
 
-                <!-- Membresía, 1 y 2-->
-                <div classa="mt-4">
-                    <x-input-label for="membership" :value="__('Tipo de usuario')" />
-                    <x-text-input id="membership" class="block mt-1-medium" type="number" min="1" max="2"
-                        name="membership" />
-                </div>
+            
 
                 {{--  <input type="radio" name="usuario" value="1">
             <input type="radio" name="usuario" value="2"> --}}
@@ -102,8 +97,8 @@
                 </div>
 
                 </form>
-            
-                
+
+
 
 
 

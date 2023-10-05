@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('sectors', function (Blueprint $table) {
             $table->increments("id");
-            
+
             $table->string("name");
             $table->string("description")->nullable();
-            $table->string("category");
+            
 
 
 

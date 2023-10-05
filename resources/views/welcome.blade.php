@@ -22,6 +22,7 @@
     ================================================== -->
     <script src="../assets/js/modernizr.js"></script>
   </head>
+
   <body>
 
     <div class="preloader-wrapper">
@@ -95,12 +96,12 @@
                   <div id="main-nav" class="stellarnav d-flex justify-content-end right">
                     <ul class="menu-list">
                      {{--}} <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>--}}
-                     
-                    
-                      
 
 
-                      
+
+
+
+
                         <a href="login">
                           <i class="icon icon-user"></i>
                         </a>
@@ -165,6 +166,10 @@
     <section id="selling-products" class="product-store bg-light-grey padding-large">
       <div class="container">
         <div class="section-header">
+
+           {{--  @livewire('sector-live') --}}
+
+
           <h2 class="section-title">Nuestros productos</h2>
         </div>
         <ul class="tabs list-unstyled">

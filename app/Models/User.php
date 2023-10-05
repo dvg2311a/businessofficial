@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;  
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
  * Class User
@@ -27,37 +27,23 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 
- 
 
- 
-    
+
+
+
 
 class User extends Authenticatable
 {
-    
+
     static $rules = [
 		'name' => 'required',
 		'email' => 'required',
         'password' => 'required',
 		'age' => 'required',
-		'membership' => 'required',
+
     ];
 
-   /* public function validar()
-    {
-        $errors = [];
-if ($request->is('post')) 
-{
-        $user = User::make($request->all());
-        $form->validate
-        ($request, 
-                [
-                'name' => 'required|min:3',
-                'password' => 'required|confirmation'
-                ]
-        )
-    }
-                }*/
+
 
     protected $perPage = 20;
 
@@ -67,7 +53,7 @@ if ($request->is('post'))
      * @var array
      */
     protected $table='users';
-    protected $fillable = ['name','email','password','age','membership'];
+    protected $fillable = ['name','email','password','age'];
 
 
     /**
@@ -77,7 +63,7 @@ if ($request->is('post'))
     {
         return $this->hasMany('App\Models\Lending', 'id_user', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -85,7 +71,7 @@ if ($request->is('post'))
     {
         return $this->hasMany('App\Models\Membership', 'id_user', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -93,7 +79,7 @@ if ($request->is('post'))
     {
         return $this->hasMany('App\Models\Message', 'id_user', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -101,7 +87,7 @@ if ($request->is('post'))
     {
         return $this->hasMany('App\Models\Product', 'id_user', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -109,7 +95,7 @@ if ($request->is('post'))
     {
         return $this->hasMany('App\Models\Purchase', 'id_user', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -117,6 +103,6 @@ if ($request->is('post'))
     {
         return $this->hasMany('App\Models\Sale', 'id_user', 'id');
     }
-    
+
 
 }
