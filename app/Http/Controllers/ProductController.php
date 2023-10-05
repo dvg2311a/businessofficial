@@ -29,8 +29,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $products = new Product();
-        return view('product/create', compact('products'));
+        $product = new Product();
+        return view('product/create', compact('product'));
     }
 
     /**
@@ -43,7 +43,22 @@ class ProductController extends Controller
     {
         request()->validate(Product::$rules);
 
+        if($request->hasFile('imgProduct') )
+        {
+            $file = $request->file('imgProduct');
+
+            $destinationPath= 'images/imgProduct/';
+            $filename= time() . '-' . $file->getClientOriginalName();
+            $uploadsuccess = $request->file('imgProduct')->move($destinationPath, $filename);
+            //$newPost->imgProduct= $destinationPath . $filename;
+
+        }
+
         $product = Product::create($request->all());
+
+
+
+
 
         return redirect()->route('product.index')
             ->with('Éxito', 'Producto agregado');
