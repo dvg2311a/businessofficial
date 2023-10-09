@@ -97,13 +97,17 @@ class ProductController extends Controller
      * @param  Product $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $product)
     {
+
         request()->validate(Product::$rules);
+        $test = request()->except('_token','_method');
 
-        $product->update($request->all());
+        Product::where('id',$product)->update($test);
 
-        return redirect()->route('products.index')
+
+
+        return redirect()->route('product.index')
             ->with('Éxito', 'Información actualizada');
     }
 
