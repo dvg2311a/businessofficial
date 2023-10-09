@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SectorController;
+use App\Livewire\SectorLive;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -59,7 +60,7 @@ Route::middleware('auth')->group(function()
 
 });
 
-
+Route::get('/sector/live', SectorLive::class)->name('sector/live');
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Sector;
+namespace App\Livewire;
 
 
 
@@ -16,26 +16,26 @@ class SectorLive extends Component
     public $selectedSector = null/*, $description = null*/;
 
     //Propiedades o variables para guardar o mostrar datos
-    public $namesector = null;
+    public $name = null;
 
     //FUncion que se ejecutará como método o función principal el cual retorna la vista
     public function render()
     {
         return view('livewire.sector-live')->with([
-            'sectores' => Sector::all() /*'sectores' es una variable y 'Sector el modelo'. Básicamente 'sectores' obtiene los datos del
+            'sectores' => Sector::all(), 'categories' => Category::all(), /*'sectores' es una variable y 'Sector el modelo'. Básicamente 'sectores' obtiene los datos del
                                             modelo ('Sector') */
         ]);
     }
     /* FUnción perteneciente a los ciclos de vida de funciones el cual se ejecuta después de que una propiedad se actualiza,
                 en este caso la propiedad '$selectedSector' */
-    public function updateselectedSector($value)
+    public function updatedSelectedSector($value)
     {
         //Condicional por si el valor es diferente a nulo, muestre los datos que tengan el mismo id al que se ha seleccionado
         if (!is_null($value)) {
-            $this->namesector = Sector::where('id', $value)->get();
+            $this->name= Category::where('id_sector', $value)->get();
         } else {
             //Limpia la lista de sectores si no se encuentra algo.
-            $this->namesector = null;
+            $this->name = null;
         }
     }
 

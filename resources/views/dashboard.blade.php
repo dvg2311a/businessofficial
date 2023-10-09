@@ -182,8 +182,8 @@
       <section id="selling-products" class="product-store bg-light-grey padding-large">
         <div class="container">
 
-            @livewire('sector-live')
 
+        <a href="{{route('sector/live')}}">Sector Seeder</a>
 
           <div class="section-header">
             <h2 class="section-title">Nuestros productos</h2>
