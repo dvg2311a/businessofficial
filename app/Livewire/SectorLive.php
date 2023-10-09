@@ -1,15 +1,19 @@
 <?php
 
+
 namespace App\Livewire;
 
 
 
 use App\Models\Sector;
 use App\Models\Category;
+
+
 use Livewire\Component;
 
 class SectorLive extends Component
 {
+
     public $open = false;
 
     //Propiedades que se llenarán en los input en las vistas
@@ -18,11 +22,15 @@ class SectorLive extends Component
     //Propiedades o variables para guardar o mostrar datos
     public $name = null;
 
+
+
+
     //FUncion que se ejecutará como método o función principal el cual retorna la vista
     public function render()
     {
         return view('livewire.sector-live')->with([
-            'sectores' => Sector::all(), 'categories' => Category::all(), /*'sectores' es una variable y 'Sector el modelo'. Básicamente 'sectores' obtiene los datos del
+
+           'sectores' => Sector::all(), 'categories' => Category::all(), /*'sectores' es una variable y 'Sector el modelo'. Básicamente 'sectores' obtiene los datos del
                                             modelo ('Sector') */
         ]);
     }
@@ -66,3 +74,5 @@ class SectorLive extends Component
 
 
 }
+
+            

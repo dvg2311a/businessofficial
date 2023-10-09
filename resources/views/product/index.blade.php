@@ -72,9 +72,9 @@ $i=0;
 											<td>{{ $product->id_sector }}</td>
 
                                             <td>
-                                                <form action="{{ route('product/destroy',$product->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route ('product/show', $product->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Detalles') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('product/edit', $product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Modificar') }}</a>
+                                                <form action="{{ route('product.destroy',$product->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route ('product.show', $product->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Detalles') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('product.edit', $product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Modificar') }}</a>
                                                     @csrf
 
                                                     @method('DELETE')
