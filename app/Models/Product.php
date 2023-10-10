@@ -33,7 +33,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Product extends Model
 {
-    
+
     static $rules = [
 		'name' => 'required',
 		'description' => 'required',
@@ -42,7 +42,6 @@ class Product extends Model
         'color'=> 'required',
 		'avilable' => 'required',
         'ammount' => 'required',
-        'photo' => 'required',
 		'status' => 'required',
 		'id_user' => 'required',
 		'id_sector' => 'required',
@@ -66,7 +65,7 @@ class Product extends Model
     {
         return $this->hasMany('App\Models\Catalog', 'id_product', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -74,7 +73,7 @@ class Product extends Model
     {
         return $this->hasMany('App\Models\Lending', 'id_product', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -82,7 +81,7 @@ class Product extends Model
     {
         return $this->hasMany('App\Models\Purchase', 'id_product', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -90,7 +89,7 @@ class Product extends Model
     {
         return $this->hasMany('App\Models\Sale', 'id_product', 'id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
@@ -98,7 +97,7 @@ class Product extends Model
     {
         return $this->hasOne('App\Models\Sector', 'id', 'id_sector');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
@@ -106,6 +105,6 @@ class Product extends Model
     {
         return $this->hasOne('App\Models\User', 'id', 'id_user');
     }
-    
+
 
 }

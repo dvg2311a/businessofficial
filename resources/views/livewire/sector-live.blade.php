@@ -1,4 +1,5 @@
 
+
 <form wire:submit="save" style="padding: 2% 5%">
 
     <div class="inv-pro">
@@ -32,4 +33,5 @@
 
     </div>
 </form>
+
 

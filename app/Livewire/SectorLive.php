@@ -1,6 +1,7 @@
 <?php
 
 
+
 namespace App\Livewire;
 
 
@@ -21,10 +22,6 @@ class SectorLive extends Component
 
     //Propiedades o variables para guardar o mostrar datos
     public $name = null;
-
-    public $selectedCategory= null;
-
-
 
     //FUncion que se ejecutará como método o función principal el cual retorna la vista
     public function render()
@@ -75,4 +72,3 @@ class SectorLive extends Component
 
 
 }
-

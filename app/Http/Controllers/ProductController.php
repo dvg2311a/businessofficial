@@ -29,8 +29,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $products = new Product();
-        return view('product/create', compact('products'));
+        $product = new Product();
+        return view('product/create', compact('product'));
     }
 
     /**
@@ -43,7 +43,22 @@ class ProductController extends Controller
     {
         request()->validate(Product::$rules);
 
+        if($request->hasFile('imgProduct') )
+        {
+            $file = $request->file('imgProduct');
+
+            $destinationPath= 'images/imgProduct/';
+            $filename= time() . '-' . $file->getClientOriginalName();
+            $uploadsuccess = $request->file('imgProduct')->move($destinationPath, $filename);
+            //$newPost->imgProduct= $destinationPath . $filename;
+
+        }
+
         $product = Product::create($request->all());
+
+
+
+
 
         return redirect()->route('product.index')
             ->with('Éxito', 'Producto agregado');
@@ -72,7 +87,7 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
 
-        return view('product/edit', compact('product'));
+        return view('product.edit', compact('product'));
     }
 
     /**
@@ -82,13 +97,17 @@ class ProductController extends Controller
      * @param  Product $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $product)
     {
+
         request()->validate(Product::$rules);
+        $test = request()->except('_token','_method');
 
-        $product->update($request->all());
+        Product::where('id',$product)->update($test);
 
-        return redirect()->route('products.index')
+
+
+        return redirect()->route('product.index')
             ->with('Éxito', 'Información actualizada');
     }
 
