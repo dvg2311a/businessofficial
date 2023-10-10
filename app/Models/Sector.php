@@ -25,7 +25,7 @@ class Sector extends Model
 
 		'name' => 'required',
         'description'=> 'required',
-		'category' => 'required',
+		
     ];
 
     protected $perPage = 20;
@@ -35,7 +35,7 @@ class Sector extends Model
      *
      * @var array
      */
-   
+
     protected $fillable = ['name','description','category'];
 
 

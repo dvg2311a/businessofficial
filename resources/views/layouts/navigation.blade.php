@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link href="{{route('sector/index')}}" :active="request()->routeIs('sector/index')">
+                    <x-nav-link href="{{route('sector/live')}}" :active="request()->routeIs('sector/index')">
                         {{__('Sectores')}}
                     </x-nav-link>
                 </div>
