@@ -6,10 +6,12 @@
         <div class="inv-container1">
             <div class="inv-container">
                 <label for="sectorname" >Sectores</label>
-                   <select wire:model.live="selectedSector" class="input" style="margin-left: 35px" id="name">
+
+                   <select wire:model.live="selectedSector" class="input" style="margin-left: 35px" id="selectedSector">
                         <option value="">Elija el sector</option>     {{--OPCIONES PARA ESCOGER--}}
-                          @foreach ( $sectores as $sector )
+                        @foreach ( $sectores as $sector )
                              <option value="{{$sector->id}}">{{$sector->name}}</option>
+
 
 
                     @endforeach
@@ -19,7 +21,7 @@
             @if(!is_null($name))
             <div class="inv-container">
                 <label for="categoria">Categoria</label>
-                <select wire:model.live="name" class="input" id="categoria">
+                <select wire:model.live="selectedCategory" class="input" id="categoria">
                     <option value="">Categoría</option>
                     @foreach ($name as $category)
                         <option value="{{$category->id}}">{{$category->name_category}}</option>
@@ -29,12 +31,7 @@
             @endif
         </div>
 
-        <div>
-            <button type="button" class="button-back">Cerrar</button>
-            <button type="submit" class="button-save" id="savesector">{{__('Guardar')}}</button>
-        </div>
     </div>
-
 </form>
 
 
