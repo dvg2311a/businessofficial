@@ -1,4 +1,8 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<nav x-data="{ open: false }" class=" bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,10 +10,9 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                        <img src="/assets/images/business.png" class="block h-9 w-auto fill-current text-gray-800" >
                     </a>
                 </div>
-
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
@@ -37,7 +40,6 @@
 
 
 
-
                 {{-- Aqui esta prro
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <a class="btn btn-ptimary" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('formLogout').submit();">Cerrar Sesión</a>
@@ -47,39 +49,7 @@
                 </div>
                  xddddddddddd --}}
 
-                <div id="main-nav" class="stellarnav d-flex justify-content-end right">
-                    <ul class="menu-list">
-                        {{-- }} <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li> --}}
-
-
-
-                        <li class="user-items search-item pe-3">
-                            <a href="#" class="search-button">
-                                <i class="icon icon-search"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="cart.html">
-                                <i class="icon icon-shopping-cart"></i>
-                            </a>
-                        </li>
-
-                        </li>
-                        <a href="wishlist.html">
-                            <i class="icon icon-heart"></i>
-                        </a>
-                        <li>
-                            <a href="login">
-                                <i class="icon icon-user"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </div>
-
+                
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
