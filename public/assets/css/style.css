@@ -252,7 +252,7 @@ img {
 /*----------------------------------------------*/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: var(--heading-font);
+  font-family: Plus Jakarta Sans;
   color: var(--dark-color);
   line-height: 1.2;
 }
@@ -279,7 +279,7 @@ h3, .h3 {
   line-height: 1.4;
 }
 h4, .h4 {
-  font-size: 1.1em;
+  font-size: 4em;
   line-height: 1.4;
 }
 h5, .h5 {
@@ -296,7 +296,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 p {
-   font-family: var(--body-font);
+   font-family: Plus Jakarta Sans;
    font-size: 18px;
    line-height: 1.8;
    margin: 0 0 20px 0;
@@ -680,7 +680,7 @@ button {
   border-radius: 0;
   padding: 0.75em 1.5em;
   margin-top: 15px;
-  font-family: var(--body-font);
+  font-family: Plus Jakarta Sans;
   font-size: 15px;
   font-weight: 500;
   line-height: normal;
@@ -854,15 +854,16 @@ fieldset[disabled] a.btn {
   background-color: var(--accent-color);
 }
 .btn.btn-accent:hover {
-  color: var(--light-color) !important;
-  background-color: var(--primary-color);
+  color: #019CA4 !important;
+  background-color: white;
 }
+
 .btn.btn-primary {
-  background: var(--primary-color);
-  color: var(--light-color);
+  background: white;
+  color: #015257;
 }
 .btn.btn-primary:hover {
-  background-color: var(--dark-color);
+  background-color: rgb(29, 88, 88);
   color: var(--light-color);
 }
 
@@ -1214,7 +1215,7 @@ table.border-bottom tr {
 .single-post .content blockquote p, 
 .pullquote-right, 
 .pullquote-left {
-    font-family: var(--heading-font);
+    font-family: Plus Jakarta Sans;
     font-size: 1.5em;
     line-height: 1.4em;
     font-weight: 500;
@@ -2432,6 +2433,10 @@ a.blog-categories:hover{
 
 /*----- Footer Section
 --------------------------------------------------------------*/
+footer{
+  background: rgb(161, 197, 197);
+}
+
 #footer .footer-menu {
     margin-right: 50px;
 }

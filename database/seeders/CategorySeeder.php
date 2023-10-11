@@ -14,8 +14,13 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
             $categories= new Category();
-            $categories->name_category= 'Esta es una ctagoría';
+            $categories->name_category= 'Bisutería';
             $categories->id_sector=1;
+            $categories->save();
+
+            $categories= new Category();
+            $categories->name_category= 'Mecánico';
+            $categories->id_sector=2;
             $categories->save();
     }
 }
