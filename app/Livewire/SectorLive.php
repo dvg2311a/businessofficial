@@ -52,7 +52,7 @@ class SectorLive extends Component
         $sctr = Sector::create
             ([
                 'name' => $this->name,
-                //'description' => $this->descriptionSector,
+                ///'description' => $this->descriptionSector,
             ]);
 
         $category = Category::create
