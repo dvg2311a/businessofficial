@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  
+
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -37,39 +37,41 @@
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <meta content="" name="keywords">
       <meta content="" name="description">
-  
+
       <!-- Favicon -->
       <link class="" href="../assets/images/business.png" rel="icon">
-  
+
       <!-- Google Web Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link
           href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
           rel="stylesheet">
-  
+
       <!-- Icon Font Stylesheet -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-  
+
       <!-- Libraries Stylesheet -->
       <link href="lib/animate/animate.min.css" rel="stylesheet">
       <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  
+
       <!-- Customized Bootstrap Stylesheet -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
-  
+
+
+
       <!-- Template Stylesheet -->
       <link href="css/style.css" rel="stylesheet">
   </head>
-  
+
   <body>
       <!-- Spinner Start -->
 
       <!-- Spinner End -->
       <!-- Navbar End -->
-  
-  
+
+
       <!-- Carousel Start -->
       <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
           <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -125,16 +127,16 @@
 
           <form>
             <div class="form-group col-md-8 col-sm-6">
-              <label for="nameInput"> 
+              <label for="nameInput">
               <input type="text" class="form-control col-md-10 col-sm-6" id="nameInput" placeholder="¿Qué productos ofrecerás hoy?">
               <img class="col-md-2 col-sm-6" href="" src="../assets/images/foto.png">
               </label>
               <a href="#" class="btn btn-primary col-md-4 col-sm-6">Publicar</a>
             <a href="#" class="btn btn-primary col-md-8 col-sm-6 ">Administrar Publicaciones</a>
           </form>
-          
+
         </div>
-          
+
         </div>
       </div>
       </div>
@@ -231,7 +233,7 @@
               </div>
             </div>
             <div class="product-detail">
-            
+
               <h3 class="product-title">
                 <a href="single-product.html">Camisa blanca para caballero</a>
               </h3>
@@ -367,7 +369,7 @@
                 <a href="single-product.html">Serúm de niacinamida</a>
               </h3>
               <div class="item-price text-primary">C$350.00</div>
-              <h6 class="subtitle"><a href=""> Boutique Rosé / Solieth Zamora</a></h6 >                
+              <h6 class="subtitle"><a href=""> Boutique Rosé / Solieth Zamora</a></h6 >
             </div>
           </div>
           <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -632,7 +634,7 @@
               </div>
             </div>
             <div class="product-detail">
-              
+
                 <h3 class="product-title">
                   <a href="single-product.html">Camiseta blanca para caballero</a>
                 </h3>
@@ -1118,12 +1120,12 @@
       </div>
     </div>
   </div>
-</section> 
+</section>
 
 
 
-    
-    
+
+
     <section id="latest-blog" class="padding-large">
       <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
@@ -1238,17 +1240,17 @@
                   </li>
                 </ul>
                 <h5>¿Tienes preguntas o problemas? <a href="#" class="email">pushbusinessdbs@gmail.com</a>
-                  
+
                 </h5>
-                
+
               </div>
             </div>
-            
+
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
                 <img src="/assets/images/business.png">
                 <hr>
-                
+
                 </div>
               </div>
             </div>
