@@ -77,7 +77,7 @@
           <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img class="w-100" src="../assets/images/tan.png" height="400px" width="400px" alt="carrito lleno de compras">
+                      <img class="w-100" src="../assets/images/a.png" height="400px" width="400px" alt="carrito lleno de compras">
                       <div class="carousel-caption">
                           <div class="container text-align-right">
                               <div class="row justify-content-start">
@@ -92,7 +92,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                      <img class="w-100" src="../assets/images/si.jpg" height="400px" width="400px">
+                      <img class="w-100" src="../assets/images/b.png" height="400px" width="400px">
                       <div class="carousel-caption">
                           <div class="container">
                               <div class="row justify-content-start">

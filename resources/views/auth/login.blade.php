@@ -5,20 +5,20 @@
     <!-- Session Status -->
     @section('content')
 
-    <div class="container text-center ">
+    <div class="container text-center py-2">
     <div class="row justify-content-left">
-    <div class="col-md-4">
+    <div class="col-md-4 py-5">
     
-        <img src="../assets/images/push.jpg" height="600px" width="400px">
+        <img src="../assets/images/push.jpg" height="800px" width="500px">
     </div>
-        <div class="col-md-8">
+        <div class="col-md-8 py-4 py-3">
                 <div class= "container text-center border:primary">
 
-                <div class="card-body" >
+                <div class="card-body py-3" >
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <img class="rounded-circle" src=" ../assets/images/user.png" height="150px" width="150px">
-                        <h4>Iniciar Sesión</h4>
+                        <h4 class="py-5">Iniciar Sesión</h4>
                         <div class="container text-center col-md-3 py-2">
 
 </div>
