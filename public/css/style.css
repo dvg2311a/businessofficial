@@ -8134,16 +8134,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 21px;
   line-height: 1.8;
   font-weight: normal;
-  color: gray; }
+  color: white; }
 
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #ffc6be; }
+  color: #80B7BB; }
   a:hover, a:focus {
     text-decoration: none !important;
     outline: none !important;
@@ -8255,10 +8255,10 @@ h1, h2, h3, h4, h5,
               transition: none; } }
       .owl-carousel .owl-nav .owl-prev:hover small,
       .owl-carousel .owl-nav .owl-next:hover small {
-        color: #ffc6be; }
+        color: #80B7BB; }
       .owl-carousel .owl-nav .owl-prev:hover span:before,
       .owl-carousel .owl-nav .owl-next:hover span:before {
-        color: #ffc6be; }
+        color: #80B7BB; }
     .owl-carousel .owl-nav .owl-prev {
       left: 50%;
       margin-left: -35px; }
@@ -8279,8 +8279,8 @@ h1, h2, h3, h4, h5,
       .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
         outline: none !important; }
       .owl-carousel .owl-dots .owl-dot.active {
-        background: #ffc6be;
-        border: 1px solid #ffc6be; }
+        background: #80B7BB;
+        border: 1px solid #80B7BB; }
     @media (min-width: 992px) {
       .owl-carousel .owl-dots {
         position: absolute;
@@ -8305,7 +8305,7 @@ h1, h2, h3, h4, h5,
   height: 700px; }
 
 .work-wrap .text {
-  background: #fff3f1; }
+  background: #80B7BB; }
   .work-wrap .text h2 {
     font-size: 60px;
     font-weight: 800;

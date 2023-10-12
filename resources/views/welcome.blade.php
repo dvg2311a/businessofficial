@@ -113,7 +113,7 @@
                     <div class="featured-carousel owl-carousel">
                         <div class="item">
                             <div class="work-wrap d-md-flex">
-                                <div class="img order-md-last" style="background-image: url(images/work-1.jpg);"></div>
+                                <div class="img order-md-last" style="background-image: url(images/futuro.jpg);"></div>
                                 <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                     <div class="desc w-100">
                                         <h2 class="mb-4">Push <br> Business</h2>
@@ -133,7 +133,7 @@
                         </div>
                         <div class="item">
                             <div class="work-wrap d-md-flex">
-                                <div class="img order-md-last" style="background-image: url(images/work-2.jpg);"></div>
+                                <div class="img order-md-last" style="background-image: url(images/crece.jpg);"></div>
                                 <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                     <div class="py-md-5">
                                         <h2 class="mb-4">Push <br> Business</h2>
@@ -153,11 +153,11 @@
                         </div>
                         <div class="item">
                             <div class="work-wrap d-md-flex">
-                                <div class="img order-md-last" style="background-image: url(images/work-3.jpg);"></div>
+                                <div class="img order-md-last" style="background-image: url(images/transa.jpg);"></div>
                                 <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                     <div class="py-md-5">
                                         <h2 class="mb-4">Push <br> Business</h2>
-                                        <p class="h5">Conéctate, Crece, Triunfa</p>
+                                        <p class="h5">Simplifica las Transacciones</p>
                                         <div class="row justify-content-end">
                                             <div class="col-xl-8">
                                                 <p>Realiza transacciones sin esfuerzo. Push Business hace que el comercio sea sencillo y efectivo.</p>
@@ -173,11 +173,11 @@
                         </div>
                         <div class="item">
                             <div class="work-wrap d-md-flex">
-                                <div class="img order-md-last" style="background-image: url(images/work-4.jpg);"></div>
+                                <div class="img order-md-last" style="background-image: url(images/transa.jpg);"></div>
                                 <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
                                     <div class="py-md-5">
                                         <h2 class="mb-4">Push <br> Business</h2>
-                                        <p class="h5">Simplifica las Transacciones</p>
+                                        <p class="h5">Conéctate, Crece, Triunfa </p>
                                         <div class="row justify-content-end">
                                             <div class="col-xl-8">
                                                 <p>Descubre nuestras funciones de vanguardia. En Push Business, tenemos todas las herramientas que necesitas para triunfar.</p>
