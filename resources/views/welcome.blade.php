@@ -89,7 +89,11 @@
               <div id="main-nav" class="stellarnav d-flex justify-content-end right">
                 <ul class="menu-list">
                   <li>
-                    <a href= "">Home
+                    <a href= "">Inicio
+                    </a>
+                  </li>
+                  <li>
+                    <a href= "">Lo que hacemos
                     </a>
                   </li>
                     <a href="login">
@@ -124,8 +128,8 @@
                                             </div>
                                         </div>
                                         <p>
-                                            <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Shop the collection Outline</button>
-                                            <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
+                                            <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                            <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
                                         </p>
                                     </div>
                                 </div>
@@ -144,8 +148,8 @@
                                             </div>
                                         </div>
                                         <p>
-                                            <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Shop the collection Outline</button>
-                                            <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
+                                          <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                          <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
                                         </p>
                                     </div>
                                 </div>
@@ -164,8 +168,8 @@
                                             </div>
                                         </div>
                                         <p>
-                                            <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Shop the collection Outline</button>
-                                            <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
+                                          <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                          <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
                                         </p>
                                     </div>
                                 </div>
@@ -184,8 +188,8 @@
                                             </div>
                                         </div>
                                         <p>
-                                            <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Shop the collection Outline</button>
-                                            <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
+                                          <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                          <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
                                         </p>
                                     </div>
                                 </div>
