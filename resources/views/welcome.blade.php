@@ -1,6 +1,6 @@
 
-    
-    
+
+
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -25,6 +25,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/styleforcarousel.css">
     <!-- script
     ================================================== -->
     <script src="../assets/js/modernizr.js"></script>
@@ -36,51 +43,41 @@
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <meta content="" name="keywords">
       <meta content="" name="description">
-  
+
       <!-- Favicon -->
       <link href="../assets/images/business.png" rel="icon">
-  
+
       <!-- Google Web Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link
           href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
           rel="stylesheet">
-  
+
       <!-- Icon Font Stylesheet -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-  
+
       <!-- Libraries Stylesheet -->
       <link href="lib/animate/animate.min.css" rel="stylesheet">
       <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  
+
       <!-- Customized Bootstrap Stylesheet -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
-  
+
       <!-- Template Stylesheet -->
       <link href="css/style.css" rel="stylesheet">
   </head>
-  
+
   <body>
       <!-- Spinner Start -->
 
       <!-- Spinner End -->
-  
-  
+
+
       <!-- Navbar Start -->
-      <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-          <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-              <div class="col-lg-6 px-5 text-start">
-                  <small><i class="fa fa--marker-alt text-primary me-2"></i></small>
-                  <small class="ms-4"><i class="fa fa- text-primary me-2"></i></small>
-              </div>
-              <div class="col-lg-6 px-5 text-end">
-                  <small><i class="fa fa- text-primary me-2"></i></small>
-                  <small class="ms-4"><i class="fa fa--alt text-primary me-2"></i></small>
-              </div>
-          </div>
-  
+
+
           <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
               <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <img src="../assets/images/business.png" alt="logo" height="50px" width="50px">
@@ -92,27 +89,32 @@
               <div id="main-nav" class="stellarnav d-flex justify-content-end right">
                 <ul class="menu-list">
                   <li>
-                    <a href= "">Home
+                    <a href= "">Inicio
+                    </a>
+                  </li>
+                  <li>
+                    <a href= "">Lo que hacemos
                     </a>
                   </li>
                     <a href="login">
                       <i class="icon icon-user"></i>
                     </a>
                   </li>
-                      
+
           </ul>
       </div>
   </nav>
 </div>
       <!-- Navbar End -->
-  
-  
+
+
       <!-- Carousel Start -->
+<<<<<<< HEAD
       <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
           <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img class="w-100" src="../assets/images/tan.png" height="400px" width="400px" alt="Image">
+                      <img class="w-100" src="../assets/images/c.png" height="400px" width="400px" alt="Image">
                       <div class="carousel-caption">
                           <div class="container text-align-right">
                               <div class="row justify-content-start">
@@ -127,7 +129,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                      <img class="w-100" src="../assets/images/si.jpg" height="400px" width="400px">
+                      <img class="w-100" src="../assets/images/a.png" height="400px" width="400px">
                       <div class="carousel-caption">
                           <div class="container">
                               <div class="row justify-content-start">
@@ -152,6 +154,99 @@
               </button>
           </div>
       </div>
+=======
+      <section class="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="featured-carousel owl-carousel">
+                        <div class="item">
+                            <div class="work-wrap d-md-flex">
+                                <div class="img order-md-last" style="background-image: url(images/futuro.jpg);"></div>
+                                <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
+                                    <div class="desc w-100">
+                                        <h2 class="mb-4">Push <br> Business</h2>
+                                        <p class="h5">Descubre el Futuro del Comercio</p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-xl-8">
+                                                <p>Bienvenido a Push Business, donde los emprendedores y comerciantes se unen para redefinir el comercio. Únete a nosotros y sé parte de la revolución.</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                            <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work-wrap d-md-flex">
+                                <div class="img order-md-last" style="background-image: url(images/crece.jpg);"></div>
+                                <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
+                                    <div class="py-md-5">
+                                        <h2 class="mb-4">Push <br> Business</h2>
+                                        <p class="h5">Potencia tu Negocio</p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-xl-8">
+                                                <p>Descubre una plataforma que potencia tu negocio. Con Push Business, puedes alcanzar nuevas alturas y expandir tus horizontes.</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                          <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                          <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work-wrap d-md-flex">
+                                <div class="img order-md-last" style="background-image: url(images/transa.jpg);"></div>
+                                <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
+                                    <div class="py-md-5">
+                                        <h2 class="mb-4">Push <br> Business</h2>
+                                        <p class="h5">Simplifica las Transacciones</p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-xl-8">
+                                                <p>Realiza transacciones sin esfuerzo. Push Business hace que el comercio sea sencillo y efectivo.</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                          <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                          <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work-wrap d-md-flex">
+                                <div class="img order-md-last" style="background-image: url(images/transa.jpg);"></div>
+                                <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
+                                    <div class="py-md-5">
+                                        <h2 class="mb-4">Push <br> Business</h2>
+                                        <p class="h5">Conéctate, Crece, Triunfa </p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-xl-8">
+                                                <p>Descubre nuestras funciones de vanguardia. En Push Business, tenemos todas las herramientas que necesitas para triunfar.</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                          <button type="button" class="btn btn-outline-dark mb-2 py-3 px-4">Registrate ahora</button>
+                                          <button type="button" class="btn btn-dark mb-2 py-3 px-4">Inicia Sesion</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+>>>>>>> 59dd88f284844b1f95a4ef9549e24dd0dcac0796
       <!-- Carousel End -->
 
 
@@ -381,7 +476,7 @@
                     <a href="single-product.html">Serúm de niacinamida</a>
                   </h3>
                   <div class="item-price text-primary">$35.00</div>
-                  <h6 class="subtitle"><a href=""> Boutique Rosé / Solieth Zamora</a></h6 >                
+                  <h6 class="subtitle"><a href=""> Boutique Rosé / Solieth Zamora</a></h6 >
                 </div>
               </div>
               <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -1120,10 +1215,10 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
-    
-    
+
+
     <section id="latest-blog" class="padding-large">
       <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
@@ -1288,17 +1383,17 @@
                   </li>
                 </ul>
                 <h5>¿Tienes preguntas o problemas? <a href="#" class="email">pushbusinessdbs@gmail.com</a>
-                  
+
                 </h5>
-                
+
               </div>
             </div>
-            
+
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
                 <img src="/assets/images/business.png">
                 <hr>
-                
+
                 </div>
               </div>
             </div>
@@ -1315,8 +1410,13 @@
     <script src="../assets/js/jquery-1.11.0.min.js"></script>
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/script.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
 
-    
-    
+
