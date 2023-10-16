@@ -284,6 +284,8 @@
                   <span class="tooltip-text">.</span>
                 </button>
               </div>
+
+              {{--kojgohjojh--}}
             </div>
             <div class="product-detail">
               <h3 class="product-title">
